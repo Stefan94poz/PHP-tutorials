@@ -9,5 +9,6 @@
 </head>
 <body>
 <h1><?php echo 'Test' ?></h1>
+<p>This is some text.</p>
 </body>
 </html>
