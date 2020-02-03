@@ -22,4 +22,7 @@
         color:blue;
         font-size:25px;
     }
+    .test h1 {
+        color:#fff;
+    }
 </style>
