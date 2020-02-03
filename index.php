@@ -8,6 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-<?php echo 'Test' ?>
+<h1><?php echo 'Test' ?></h1>
 </body>
 </html>
