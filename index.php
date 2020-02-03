@@ -8,7 +8,14 @@
     <title>Document</title>
 </head>
 <body>
+<div class="test">
 <h1><?php echo 'Test' ?></h1>
 <p>This is some text.</p>
+</div>
 </body>
 </html>
+<style>
+    .test {
+        background-color:red;
+    }
+</style>
