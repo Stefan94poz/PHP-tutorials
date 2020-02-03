@@ -1,28 +1,16 @@
+<?php 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<div class="test">
-<h1><?php echo 'Test' ?></h1>
-<p>This is some text.</p>
-</div>
-</body>
-</html>
-<style>
-    .test {
-        background-color:red;
+$myArray = array(
+    array( 1, 2, 3 ),
+    array( 4, 3, 5 ),
+    array( 1, 2, 2 )
+  );
+
+$length = count($myArray);
+$i = 0;
+for ($i=0; $i < $length - 1 ; $i++) { 
+    for ($j=0; $j < $myArray[i]; $j++) { 
+        echo $myArray[i][j];
     }
-    .test p {
-        color:blue;
-        font-size:25px;
-    }
-    .test h1 {
-        color:#fff;
-    }
-</style>
+}
+
