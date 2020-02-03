@@ -18,4 +18,8 @@
     .test {
         background-color:red;
     }
+    .test p {
+        color:blue;
+        font-size:25px;
+    }
 </style>
