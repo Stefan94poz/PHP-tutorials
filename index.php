@@ -1,17 +1,19 @@
 <?php 
 
-$myArray = array(
-    array( 1, 2, 3, 8 ),
-    array( 4, 3, 5, 7 ),
-    array( 1, 2, 2, 6 )
-  );
 
-$length = count($myArray);
-
-for ($i=0; $i < $length; $i++) { 
-    for ($j=0; $j < count($myArray[$i]); $j++) { 
-        echo $myArray[$i][$j] . " " ;
+$array = array( 1, 2, 3, 2, 3, 8, 8 );
+$length_1 = count($array);
+function getPairs($array, $length_1){
+    $pairs = 0;
+    for ($i=0; $i < $length_1; $i++) {  
+        for ($j=$i + 1; $j < $length_1 ; $j++) { 
+            if ($array[$i] == $array[$j] ) {
+                $pairs += 1;  
+            }
+        }      
     }
-    echo '<br><br>';
+    return  $pairs;
 }
 
+ $is= getPairs($array, $length_1);
+ echo ' Number of pairs are: '. $is;
